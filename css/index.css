@@ -15,7 +15,7 @@ body{
 header nav .logo{
     display: flex;
     justify-content: center;
-    margin: 5px;
+    margin: 10px;
 }
 header nav .logo img {
     width: 150px;
@@ -25,23 +25,24 @@ header nav .menu {
     justify-content: space-around;
     padding: 0;
     list-style: none;
+    text-align: center;
 }
 header nav .menu a{
     text-decoration: none;
     text-transform: uppercase;
     color: var(--main-color);
     font-size: 120%;
-    border: 2px solid transparent;
-    padding: 10px;
+    border: 1px solid transparent;
+    padding: 5px;
        }
 header nav .menu a:hover {
-    border: 2px solid var(--accent-color);
+    border: 1px solid var(--accent-color);
     background-color: var(--accent-color);
        }
 @media( min-width:550px ){
     header nav{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
     }
     header nav .menu {
         flex: 1;
@@ -49,5 +50,115 @@ header nav .menu a:hover {
 
 }
 header .banner {
-    background-image:url(./img/banner-bg.jpg);
+    background-image:url(../img/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header .banner h1 {
+    color: white;
+    font-size: 20px;
+}
+header .banner {
+  color: #ddf;
+  background-color: #112;
+  padding-top: 60px;
+}
+
+.button,
+.button::before,
+.button::after,
+.button span,
+.button span::before,
+.button span::after
+{
+  transition: all ease .5s;
+}
+
+.button{
+  position: relative;
+  display: inline-block;
+  padding: 0.3em;
+  margin: 1em;
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover
+{
+  box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+}
+
+.button span
+{
+  display: flex;
+  width: 48%;
+  padding: 0.6em 2em;
+}
+
+.button:hover span
+{
+  background-color: #fff;
+  color: #112;
+}
+
+.button::before,
+.button::after,
+.button span::before,
+.button span::after
+{
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+
+.button::before,
+.button span::before
+{
+  border-style: solid none;
+}
+
+.button::before,
+.button span::after{
+  left: 0;
+  top: -0.4em;
+  width: 100%;
+  height: calc(100% + 0.8em);
+}
+
+.button::after,
+.button span::after
+{
+  border-style: none solid;
+}
+
+.button::after,
+.button span::before
+{
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em);
+}
+
+.button:hover::after,
+.button:hover span::after
+{
+  transform: scaleY(0);
+}
+
+.button:hover::before,
+.button:hover span::before
+{
+  transform: scaleX(0);
+}
+
+.button:hover span::after,
+.button:hover span::before
+{
+  opacity: 0;
 }

@@ -50,30 +50,30 @@ header nav .menu a:hover {
 
 }
 header .banner {
-    background-image:url(../img/banner-bg.jpg);
+    background-image:url(../img/border.png);
     background-size: cover;
     background-position: center;
-    min-height: 500px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 header .banner h1 {
     color: white;
-    font-size: 20px;
+    font-size: 28px;
 }
 header .banner {
-  color: #ddf;
+  color:var(--accent-color);
   background-color: #112;
-  padding-top: 60px;
+  padding-top: 180px;
 }
 
 .button,
 .button::before,
 .button::after,
-.button span,
-.button span::before,
-.button span::after
+.button a,
+.button a::before,
+.button a::after
 {
   transition: all ease .5s;
 }
@@ -90,17 +90,23 @@ header .banner {
 
 .button:hover
 {
-  box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+  box-shadow: 0 0 5em .5em rgba(255, 255, 255, 0.5);
 }
 
-.button span
+.button a
 {
+  text-decoration-line: none;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-size: 20px;
   display: flex;
   width: 48%;
   padding: 0.6em 2em;
+
+
 }
 
-.button:hover span
+.button:hover a
 {
   background-color: #fff;
   color: #112;
@@ -108,8 +114,8 @@ header .banner {
 
 .button::before,
 .button::after,
-.button span::before,
-.button span::after
+.button a::before,
+.button a::after
 {
   content: '';
   position: absolute;
@@ -117,13 +123,13 @@ header .banner {
 }
 
 .button::before,
-.button span::before
+.button a::before
 {
   border-style: solid none;
 }
 
 .button::before,
-.button span::after{
+.button a::after{
   left: 0;
   top: -0.4em;
   width: 100%;
@@ -131,13 +137,13 @@ header .banner {
 }
 
 .button::after,
-.button span::after
+.button a::after
 {
   border-style: none solid;
 }
 
 .button::after,
-.button span::before
+.button a::before
 {
   top: 0;
   left: -0.4em;
@@ -146,19 +152,48 @@ header .banner {
 }
 
 .button:hover::after,
-.button:hover span::after
+.button:hover a::after
 {
   transform: scaleY(0);
 }
 
 .button:hover::before,
-.button:hover span::before
+.button:hover a::before
 {
   transform: scaleX(0);
 }
 
-.button:hover span::after,
-.button:hover span::before
+.button:hover a::after,
+.button:hover a::before
 {
   opacity: 0;
+}
+.we-have{
+    font-family: Arial, Helvetica, sans-serif;
+    Color: var(--accent-color);
+    text-align: center;
+}
+main .about {
+    display: grid;
+    grid-template-columns: 1fr
+
+}
+main .about .about-us{
+    display: flex;
+}
+main .about .about-us img {
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+}
+main .about .about-us dt{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+@media ( min-width: 800px ){
+main .about {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
 }

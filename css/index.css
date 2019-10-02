@@ -53,7 +53,7 @@ header .banner {
     background-image:url(../img/border.png);
     background-size: cover;
     background-position: center;
-    min-height: 400px;
+    min-height: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -65,7 +65,7 @@ header .banner h1 {
 header .banner {
   color:var(--accent-color);
   background-color: #112;
-  padding-top: 180px;
+  padding-top: 120px;
 }
 
 .button,
@@ -172,6 +172,7 @@ header .banner {
     font-family: Arial, Helvetica, sans-serif;
     Color: var(--accent-color);
     text-align: center;
+    margin: 60px;
 }
 main .about {
     display: grid;
@@ -182,6 +183,7 @@ main .about .about-us{
     display: flex;
 }
 main .about .about-us img {
+    display: flex;
     width: 100px;
     height: 100px;
     margin: 2px;

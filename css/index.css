@@ -68,6 +68,81 @@ header .banner {
   padding-top: 120px;
 }
 
+
+.we-have{
+    font-family: Arial, Helvetica, sans-serif;
+    Color: var(--accent-color);
+    text-align: center;
+    margin: 60px;
+}
+main .about {
+    display: grid;
+    grid-template-columns: 1fr
+
+}
+main .about .about-us{
+    display: flex;
+}
+main .about .about-us img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+}
+main .about .about-us dt{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+@media ( min-width: 800px ){
+main .about {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+}
+.product-list .product .product-nane {
+color: red;
+text-align: center;
+}
+
+ .product-list .product img  {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.product-list.product .product-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 640px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 960px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
+
+
 .button,
 .button::before,
 .button::after,
@@ -167,35 +242,4 @@ header .banner {
 .button:hover a::before
 {
   opacity: 0;
-}
-.we-have{
-    font-family: Arial, Helvetica, sans-serif;
-    Color: var(--accent-color);
-    text-align: center;
-    margin: 60px;
-}
-main .about {
-    display: grid;
-    grid-template-columns: 1fr
-
-}
-main .about .about-us{
-    display: flex;
-}
-main .about .about-us img {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    margin: 2px;
-}
-main .about .about-us dt{
-    text-align: center;
-    margin: auto;
-    font-size: 20px;
-}
-@media ( min-width: 800px ){
-main .about {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-}
 }

@@ -168,6 +168,11 @@ header .banner {
 {
   opacity: 0;
 }
+.we-have{
+    font-family: Arial, Helvetica, sans-serif;
+    Color: var(--accent-color);
+    text-align: center;
+}
 main .about {
     display: grid;
     grid-template-columns: 1fr

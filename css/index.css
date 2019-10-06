@@ -172,24 +172,50 @@ text-align: center;
   text-decoration: none;
   margin-left: 50px;
 }
-.our-result{
-    background: rgb(233, 230, 230);
+.result{
+    background: #ffd096;
+}
+ .result h2{
+     text-align:center;
+     color: white;
+     font-size: 24px;
+     padding: 10px;
 
+ }
+
+  .clients-result{
+    display: flex;
+    align-items: flex-start;
+    margin-block-end: 30px
 }
 
-.clients-result{
-    display:flex;
-    border: 1px solid;
-}
-.clients-result img{
+    .clients-result img {
     width: 50%;
+    padding: 10px;
 }
+    .clients-result p{
+        font-size: 14px;
+        color: white;
+        text-align: left;
+}
+
 @media ( min-width: 700px ){
 .our-result{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
+}
+.folow-us{
+display:grid;
+grid-template-columns: 1fr 1fr;
+}
+.sm{
+    display: flex;
+    margin: 10px;
+}
+.sm .logo {
+    padding: 5px;
 }
 .button
 .button::before,

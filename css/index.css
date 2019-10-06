@@ -206,6 +206,11 @@ text-align: center;
     grid-gap: 10px;
 }
 }
+.clients-contacts input{
+    display: grid;
+    grid-gap: 10px;
+
+}
 .folow-us{
 display:grid;
 grid-template-columns: 1fr 1fr;

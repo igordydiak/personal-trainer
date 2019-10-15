@@ -206,14 +206,21 @@ text-align: center;
     grid-gap: 10px;
 }
 }
+
+
+#contact{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+background-color: antiquewhite;
+padding: 10px;
+}
+#contact p{
+    text-align: left;
+}
+
 .clients-contacts input{
     display: grid;
     grid-gap: 10px;
-
-}
-.folow-us{
-display:grid;
-grid-template-columns: 1fr 1fr;
 }
 .sm{
     display: flex;
@@ -222,6 +229,14 @@ grid-template-columns: 1fr 1fr;
 .sm .logo {
     padding: 5px;
 }
+.our-contacts p{
+
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+}
+
+
 .button
 .button::before,
 .button::after,

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Source+Sans+Pro&display=swap');
 
 :root{
-    --accent-color:#f7752a;
+    --accent-color:#ff9021;
     --main-color:#87857f;
     font-family: 'Fira Sans', sans-serif;
 
@@ -38,11 +38,12 @@ header nav .menu a{
 header nav .menu a:hover {
     border: 1px solid var(--accent-color);
     background-color: var(--accent-color);
+    color: white;
        }
 @media( min-width:550px ){
     header nav{
         display: flex;
-        align-items: flex-end;
+        align-items: center;
     }
     header nav .menu {
         flex: 1;
@@ -75,27 +76,27 @@ header .banner {
     text-align: center;
     margin: 40px;
 }
-main .about {
+section .about {
     display: grid;
     grid-template-columns: 1fr
 
 }
-main .about .about-us{
+section .about .about-us{
     display: flex;
 }
-main .about .about-us img {
+section .about .about-us img {
     display: flex;
     width: 100px;
     height: 100px;
     margin: 2px;
 }
-main .about .about-us dt{
+section .about .about-us dt{
     text-align: center;
     margin: auto;
     font-size: 20px;
 }
 @media ( min-width: 800px ){
-main .about {
+section .about {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
 }
@@ -206,13 +207,15 @@ text-align: center;
     grid-gap: 10px;
 }
 }
-
-
+footer{
+    background-color:#3b3835;
+}
+@media (min-width: 630px){
 #contact{
 display:grid;
 grid-template-columns: 1fr 1fr 1fr;
-background-color: antiquewhite;
 padding: 10px;
+}
 }
 #contact p{
     text-align: left;
@@ -233,9 +236,13 @@ padding: 10px;
 
     text-align: center;
     font-size: 16px;
-    color: gray;
+    color:white;
 }
-
+footer  p {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
 
 .button
 .button::before,
